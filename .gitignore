@@ -1,0 +1,36 @@
+# local machine / game paths
+Directory.Build.user.props
+
+# build
+**/bin/
+**/obj/
+artifacts/
+
+# reverse engineering output
+decomp/
+decompiled/
+references/
+
+# local runtime and generated output
+BepInEx/
+PactHistoryExports/
+*.log
+
+# IDE
+.vs/
+.idea/
+*.user
+*.suo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# local tooling and secrets
+.env
+.env.*
+!.env.example
+*.pfx
+*.snk
+*.key
+*.pem

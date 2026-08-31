@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <!-- Folder containing LazyWitchsFactory.exe -->
+    <GameDir>D:\Games\SteamLibrary\steamapps\common\Lazy Witch's Factory</GameDir>
+  </PropertyGroup>
+</Project>
