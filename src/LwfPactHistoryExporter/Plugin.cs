@@ -9,7 +9,7 @@ namespace LwfPactHistoryExporter
     {
         public const string PluginGuid = "io.github.kusyua.lwf.pacthistoryexporter";
         public const string PluginName = "LWF Pact History Exporter";
-        public const string PluginVersion = "0.1.0";
+        public const string PluginVersion = "1.0.0";
 
         internal static ManualLogSource Log { get; private set; }
 

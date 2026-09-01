@@ -1,0 +1,9 @@
+{
+  "name": "LwfPactHistoryExporter",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/kusyua/lwf-pact-history-exporter",
+  "description": "Export pact history from Lazy Witch's Factory as PNG or JPEG images.",
+  "dependencies": [
+    "BepInEx-BepInExPack-5.4.2305"
+  ]
+}

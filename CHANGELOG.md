@@ -2,7 +2,7 @@
 
 All notable changes to this project are documented in this file.
 
-## Unreleased
+## 1.0.0 (unreleased)
 
 - Added pact-history export as PNG or JPEG images.
 - Added a five-panel-per-row export layout and optional per-pact in-run timestamps.
