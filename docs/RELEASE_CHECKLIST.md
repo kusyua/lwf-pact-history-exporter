@@ -24,16 +24,17 @@ The GitHub repository is intended to be public and to hold source, development d
 ## Release quality
 
 - [ ] Build from a clean checkout using documented steps.
-- [ ] Test with the documented game and BepInEx versions.
+- [x] Test with the documented game and BepInEx versions.
 - [ ] Back up save data before runtime tests that could affect game state.
-- [ ] Document installation, removal, configuration, output location, known limitations, and compatibility.
+- [x] Document installation, removal, configuration, output location, known limitations, and compatibility.
 - [ ] Attach checksums to binary releases.
 
 ## Thunderstore package
 
-- [ ] Confirm the export feature has been verified locally before uploading a public package.
+- [x] Confirm the export feature has been verified locally before uploading a public package.
 - [ ] Include `manifest.json`, `README.md`, and a 256×256 `icon.png` at the root of the package ZIP.
-- [ ] Build the ZIP with `scripts/New-ThunderstorePackage.ps1` and verify the contained DLL is under `LwfPactHistoryExporter/`.
+- [x] Build the ZIP with `scripts/New-ThunderstorePackage.ps1` and verify the contained DLL is under `LwfPactHistoryExporter/`.
+- [x] Import the ZIP as a Thunderstore Mod Manager Local Mod and verify in-game Export.
 - [ ] Validate the package manifest and preview the README in Thunderstore.
 - [ ] Set `website_url` to the public GitHub repository after its URL is known.
 - [ ] Verify the public GitHub raw-image URLs in `thunderstore/README.md` while signed out.

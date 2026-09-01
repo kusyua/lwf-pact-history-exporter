@@ -3,8 +3,6 @@
 Export your **Pact History** from *Lazy Witch's Factory* as a PNG or
 JPEG image while keeping the game's pact-panel presentation.
 
-> **Work in progress:** No public release is available yet.
-
 [日本語はこちら](#日本語)
 
 <!-- RELEASE TODO: verify the public raw GitHub image URLs below in
@@ -42,8 +40,8 @@ Files are timestamped and begin with `PactHistory_`.
 
 ### Thunderstore Mod Manager / r2modman
 
-A public release is not available yet. Once released, installing through
-a compatible Thunderstore mod manager will be the recommended method.
+Install through a compatible Thunderstore mod manager. The required
+BepInExPack dependency is installed automatically.
 
 ### Manual installation
 
@@ -100,8 +98,6 @@ publisher of *Lazy Witch's Factory*.
 の**契約履歴**を、ゲーム内の契約パネルに近い見た目のまま PNG / JPEG
 画像として保存する MOD です。
 
-> **開発中:** 現在、公開リリースはまだありません。
-
 ## できること
 
 契約履歴画面に **Export** ボタンを追加します。
@@ -132,8 +128,8 @@ publisher of *Lazy Witch's Factory*.
 
 ### Thunderstore Mod Manager / r2modman
 
-現在はまだ公開リリースがありません。リリース後は、対応する Thunderstore
-系 MOD Manager からのインストールを推奨する予定です。
+対応するThunderstore系MOD Managerからインストールしてください。必要な
+BepInExPack依存関係も自動的に導入されます。
 
 ### 手動インストール
 
