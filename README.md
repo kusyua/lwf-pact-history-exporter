@@ -18,7 +18,7 @@ A BepInEx 5 mod for **Lazy Witch's Factory** that exports the pact history as PN
 - Can show each pact's in-run acquisition time above its panel when it is available.
 - Saves timestamped image files under `PactHistoryExports` in the game directory.
 - Can instead save JPEG files with an adjustable quality and size target.
-- Splits output into multiple PNG files when a single texture would exceed the runtime limit.
+- Splits output into multiple image files when a single texture would exceed the runtime limit.
 
 ## Requirements
 
@@ -115,7 +115,7 @@ Keep `TestPanelCount = 0` for ordinary play; this is the default and disables th
 - Game updates can change private UI implementation details and may require a MOD update.
 - This mod is intended only for people who own Lazy Witch's Factory.
 - This project is not affiliated with or endorsed by the developer or publisher of Lazy Witch's Factory.
-- This repository does not redistribute game assets or game assemblies.
+- This repository does not redistribute extracted game assets or game assemblies. Its demonstration screenshots only document the MOD's runtime behavior.
 
 See [the mod-policy notes](docs/MOD_POLICY.md) for the project rules derived from the official guidelines.
 
@@ -123,4 +123,6 @@ See [the mod-policy notes](docs/MOD_POLICY.md) for the project rules derived fro
 
 Complete [the release checklist](docs/RELEASE_CHECKLIST.md), including selecting a license and verifying the game's mod-distribution policy, before distributing a release.
 
-This source repository is intended to remain private. End-user releases will be distributed through Thunderstore after the export feature has been implemented and verified locally in the game.
+This repository is intended to be public on GitHub for source code, development documentation, issue tracking, changelog history, and Thunderstore page assets. End-user packages will be distributed through Thunderstore after they have been built and verified locally.
+
+The end-user-facing Thunderstore description is maintained separately at [thunderstore/README.md](thunderstore/README.md).

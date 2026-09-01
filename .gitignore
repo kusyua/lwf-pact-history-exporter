@@ -5,6 +5,7 @@ Directory.Build.user.props
 **/bin/
 **/obj/
 artifacts/
+dist/
 
 # reverse engineering output
 decomp/
