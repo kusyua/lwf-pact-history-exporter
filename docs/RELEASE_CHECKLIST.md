@@ -35,5 +35,5 @@ The GitHub repository is intended to be public and to hold source, development d
 - [ ] Include `manifest.json`, `README.md`, and a 256×256 `icon.png` at the root of the package ZIP.
 - [ ] Validate the package manifest and preview the README in Thunderstore.
 - [ ] Set `website_url` to the public GitHub repository after its URL is known.
-- [ ] Replace relative image paths in `thunderstore/README.md` with public GitHub raw-image URLs and verify them while signed out.
+- [ ] Verify the public GitHub raw-image URLs in `thunderstore/README.md` while signed out.
 - [ ] Use tagged releases; do not distribute development builds from arbitrary commits.

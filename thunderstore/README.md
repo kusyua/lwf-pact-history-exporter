@@ -7,15 +7,14 @@ JPEG image while keeping the game's pact-panel presentation.
 
 [日本語はこちら](#日本語)
 
-<!-- RELEASE TODO: after the public GitHub URL for lwf-pact-history-exporter is
-known, replace the two relative asset paths below with public raw GitHub image
-URLs, then verify them in Thunderstore's Markdown Preview while signed out. -->
+<!-- RELEASE TODO: verify the public raw GitHub image URLs below in
+Thunderstore's Markdown Preview while signed out. -->
 
 ## What it does
 
 The mod adds an **Export** button to the Pact History screen.
 
-![Export button](../assets/thunderstore/export-button.jpg)
+![Export button](https://raw.githubusercontent.com/kusyua/lwf-pact-history-exporter/main/assets/thunderstore/export-button.jpg)
 
 -   Exports the pact history using the game's pact-panel presentation.
 -   Arranges up to five pact panels per row.
@@ -29,7 +28,7 @@ Unavailable timestamps are displayed as `—`.
 ### Example output
 
 ![Example pact history
-export](../assets/thunderstore/export-example.png)
+export](https://raw.githubusercontent.com/kusyua/lwf-pact-history-exporter/main/assets/thunderstore/export-example.png)
 
 Exported images are saved under:
 
@@ -107,7 +106,7 @@ publisher of *Lazy Witch's Factory*.
 
 契約履歴画面に **Export** ボタンを追加します。
 
-![Exportボタン](../assets/thunderstore/export-button.jpg)
+![Exportボタン](https://raw.githubusercontent.com/kusyua/lwf-pact-history-exporter/main/assets/thunderstore/export-button.jpg)
 
 -   契約履歴をゲーム内の契約パネル表示を利用して画像化
 -   1行あたり最大5枚の契約パネルを配置
@@ -119,7 +118,7 @@ publisher of *Lazy Witch's Factory*.
 
 ### 出力例
 
-![契約履歴の出力例](../assets/thunderstore/export-example.png)
+![契約履歴の出力例](https://raw.githubusercontent.com/kusyua/lwf-pact-history-exporter/main/assets/thunderstore/export-example.png)
 
 出力先:
 
