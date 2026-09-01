@@ -1,4 +1,5 @@
 using BepInEx;
+using BepInEx.Logging;
 using HarmonyLib;
 
 namespace LwfPactHistoryExporter
@@ -10,10 +11,22 @@ namespace LwfPactHistoryExporter
         public const string PluginName = "LWF Pact History Exporter";
         public const string PluginVersion = "0.1.0";
 
+        internal static ManualLogSource Log { get; private set; }
+
         private void Awake()
         {
+            Log = Logger;
+            PactHistoryExportSettings.Initialize(Config);
             Logger.LogInfo($"{PluginName} {PluginVersion} loaded.");
             new Harmony(PluginGuid).PatchAll();
+        }
+
+        private void Update()
+        {
+            if (PactHistoryExportSettings.DebugExportShortcut != null && PactHistoryExportSettings.DebugExportShortcut.Value.IsDown())
+            {
+                PactHistoryExportService.RequestDebugExport();
+            }
         }
     }
 }

@@ -74,14 +74,15 @@ MOD ごとに、この下へ調査日・ゲームバージョン・対象 symbol
 - Runtime findings:
 - Remaining uncertainty:
 
-### 2026-08-31 / Unity 6000.0.80f1
+### 2026-09-01 / Unity 6000.0.80f1
 
-- Purpose: リザルト画面から契約履歴パネルを縦並びPNGとして出力し、出力日時と契約取得時刻を表示できるか調査。
-- Symbols inspected: `ResultUIManager`, `ResultWindow`, `PactHistoryUIController`, `PactHistoryStore`, `PactCellComponents`, `PactCellSnapshot`, `WindowWithCells`, `GameStateManager.RecordRunPactHistoryEntry`。
-- Patch candidate: `ResultWindow` 構築後に出力用 `ResultCellData` とセル数を追加する局所的な constructor postfix。実装前に実機で生成タイミングを確認する。
+- Purpose: 契約履歴画面から、契約パネルを5列のPNGまたはJPEGとして出力する。
+- Symbols inspected: `PactHistoryUIController`, `PactHistoryStore`, `PactCellComponents`, `PactCellSnapshot`, `GameStateManager.RecordRunPactHistoryEntry`。
+- Patch: `PactHistoryUIController.Open(InGameWindowPresentationContext, Transform, Action)` postfix で、結果画面のセル型ボタンテンプレートを契約履歴画面へ複製し、`Export` ボタンとして使用する。固定ラベルの戻るボタンは複製しない。`Export` は戻るボタンと同じ親・アンカー・高さを使い、文字が収まる横幅（戻るボタンの1.8倍、最低180px）で左隣へ相対配置する。`PactHistoryStore.Add` postfix で契約取得時点のラン内経過秒を記録する。
 - Static findings: `PactHistoryStore.GetSnapshots()` から表示用スナップショットを取得でき、ゲームの `PactCellComponents.ApplySnapshot()` で元のパネル表示を再利用できる。契約取得時には `GameStateManager.GetElapsedGameplaySeconds()` と同じラン内経過秒が `RunPactHistoryEntryV1.acquiredAtElapsedGameplaySeconds` に記録される。MODは `PactHistoryStore.Add` を監視し、セーブへ触れずに同時点の経過秒をメモリ保持できる。
-- Runtime findings: 未確認。
-- Remaining uncertainty: パネルの実寸、Canvasの描画モード、`SystemInfo.maxTextureSize`、大量履歴時の分割単位、出力完了通知方法、取得時刻ラベルを既存パネルのどの位置に追加するか。
+- Runtime findings: BepInEx 5でプラグインのロード、ゲーム本体直下の `PactHistoryExports` への5列PNG/JPEG出力、契約履歴画面のセル型 `Export` ボタン、通常出力と30件テスト出力を確認済み。公式アップデートによる契約履歴の一画面表示切替とも競合せず、パネル形式で画像を残せるMODの用途は維持されている。既存の戻るボタンを複製する方式は、文字が差し替えられずレイアウトも崩れたため不採用。
+- Test support: `[Debug] TestPanelCount` を正数にして `F8` を押すと、現在のスナップショットを指定数まで繰り返した `_Test_` 出力を作成する。履歴・セーブは変更しない。既定値は `0`（無効）。
+- Remaining uncertainty: 公式更新で戻るボタンの構造自体が変わった場合の追随は、更新後に再確認する。出力完了通知はログのみ。
 
 ### Timestamp configuration policy
 

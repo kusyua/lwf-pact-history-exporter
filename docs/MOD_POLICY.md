@@ -17,4 +17,4 @@ The official [Streaming, Fan Works & Mod Guidelines](https://steamcommunity.com/
 - The exporter may render game-provided pact panels only at runtime in a user's installed copy of the game.
 - Do not add features that expose hidden, unreleased, or paid content.
 - Make compatibility claims specific to the tested game version and state that updates can break the MOD.
-- Recheck the official policy before making a public GitHub release or publishing a new version.
+- Recheck the official policy before publishing a new Thunderstore package or version.

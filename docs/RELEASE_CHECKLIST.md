@@ -1,8 +1,8 @@
 # Release checklist
 
-This is a version-controlled project checklist, not a personal scratch note. Update it when the project's release policy changes, and complete it before the first public repository or any binary release.
+This is a version-controlled project checklist, not a personal scratch note. Update it when the project's release policy changes, and complete it before any binary release.
 
-The repository must remain private until the MOD has been implemented and verified locally in the game.
+The source repository remains private. End-user releases are distributed through Thunderstore only after the MOD has been implemented and verified locally in the game.
 
 ## Legal and attribution
 
@@ -28,9 +28,10 @@ The repository must remain private until the MOD has been implemented and verifi
 - [ ] Document installation, removal, configuration, output location, known limitations, and compatibility.
 - [ ] Attach checksums to binary releases.
 
-## GitHub configuration
+## Thunderstore package
 
-- [ ] Confirm the export feature has been verified locally before changing the GitHub repository to public.
-- [ ] Disable unused repository features or configure issue templates as needed.
-- [ ] Enable secret scanning and dependency alerts where available.
+- [ ] Confirm the export feature has been verified locally before uploading a public package.
+- [ ] Include `manifest.json`, `README.md`, and a 256×256 `icon.png` at the root of the package ZIP.
+- [ ] Validate the package manifest and preview the README in Thunderstore.
+- [ ] Leave `website_url` empty unless a public support page is deliberately created.
 - [ ] Use tagged releases; do not distribute development builds from arbitrary commits.
