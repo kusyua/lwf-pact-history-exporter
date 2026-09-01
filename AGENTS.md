@@ -4,7 +4,7 @@
 
 ## 最優先
 
-- 変更前に `README.md` と `docs/MODDING_NOTES.md` を読む。
+- 変更前に `README.md`、関連する `docs/` 資料、`thunderstore/README.md` を読む。
 - 大きな実装を一度に行わず、ロード確認 → 対象調査 → 最小パッチ → 実機確認の順で進める。
 - ゲーム内部 API を推測しない。Harmony patch を書く前に、現在の `Assembly-CSharp.dll` を逆コンパイルして対象メソッドとシグネチャを確認する。
 - ゲーム本体 DLL や BepInEx DLL をリポジトリへコピー・コミットしない。
@@ -15,7 +15,6 @@
 
 - `README.md`: GitHub公開リポジトリ向け。開発・導入・設定・対応バージョン・既知の制限を記載する。
 - `thunderstore/README.md`: Thunderstore配布ページ向け。利用者向けの概要・使い方・設定・既知の制限を英語→日本語で記載する。開発手順や内部調査は含めない。
-- `docs/MODDING_NOTES.md`: 実装に必要な逆コンパイル調査の事実、仮説、実機観測を記録する。公開前には利用者・協力者に有益な内容へ圧縮する。
 - `docs/MOD_POLICY.md`: 公式のMOD配布方針から導いた、このリポジトリの遵守事項。
 - `docs/RELEASE_CHECKLIST.md`: 公開・リリース時に繰り返し使うプロジェクト基準。個人の一時メモには使わない。
 - `assets/thunderstore/`: GitHub公開リポジトリで管理するThunderstore説明ページ用素材。公式方針の範囲で、MODの動作を示すスクリーンショットだけを置く。抽出したゲーム資産は置かない。
