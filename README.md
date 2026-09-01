@@ -121,8 +121,12 @@ See [the mod-policy notes](docs/MOD_POLICY.md) for the project rules derived fro
 
 ## Release process
 
-Complete [the release checklist](docs/RELEASE_CHECKLIST.md), including selecting a license and verifying the game's mod-distribution policy, before distributing a release.
+Complete [the release checklist](docs/RELEASE_CHECKLIST.md), including verifying the game's mod-distribution policy, before distributing a release.
 
 This repository is intended to be public on GitHub for source code, development documentation, issue tracking, changelog history, and Thunderstore page assets. End-user packages will be distributed through Thunderstore after they have been built and verified locally.
 
 The end-user-facing Thunderstore description is maintained separately at [thunderstore/README.md](thunderstore/README.md).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). Game assets and game assemblies remain the property of their respective rights holders.

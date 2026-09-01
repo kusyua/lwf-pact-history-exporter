@@ -6,7 +6,7 @@ The GitHub repository is intended to be public and to hold source, development d
 
 ## Legal and attribution
 
-- [ ] Select and add a source-code license. Public source is not automatically open source.
+- [x] Add the MIT source-code license in `LICENSE`.
 - [x] Verify the current Lazy Witch's Factory modding and redistribution policy; recheck it before every public release.
 - [ ] Confirm that no extracted game artwork, fonts, audio, assemblies, or other copyrighted game assets are included. MOD demonstration screenshots are reviewed separately under the official policy.
 - [ ] Confirm the MOD does not unlock unimplemented content or paid/DLC content.

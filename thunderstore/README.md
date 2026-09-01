@@ -7,9 +7,9 @@ JPEG image while keeping the game's pact-panel presentation.
 
 [日本語はこちら](#日本語)
 
-<!-- RELEASE TODO: after the public GitHub URL is known, replace the two
-relative asset paths below with public raw GitHub image URLs, then verify them
-in Thunderstore's Markdown Preview while signed out. -->
+<!-- RELEASE TODO: after the public GitHub URL for lwf-pact-history-exporter is
+known, replace the two relative asset paths below with public raw GitHub image
+URLs, then verify them in Thunderstore's Markdown Preview while signed out. -->
 
 ## What it does
 
