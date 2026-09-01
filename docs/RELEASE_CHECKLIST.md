@@ -33,6 +33,7 @@ The GitHub repository is intended to be public and to hold source, development d
 
 - [ ] Confirm the export feature has been verified locally before uploading a public package.
 - [ ] Include `manifest.json`, `README.md`, and a 256×256 `icon.png` at the root of the package ZIP.
+- [ ] Build the ZIP with `scripts/New-ThunderstorePackage.ps1` and verify the contained DLL is under `LwfPactHistoryExporter/`.
 - [ ] Validate the package manifest and preview the README in Thunderstore.
 - [ ] Set `website_url` to the public GitHub repository after its URL is known.
 - [ ] Verify the public GitHub raw-image URLs in `thunderstore/README.md` while signed out.

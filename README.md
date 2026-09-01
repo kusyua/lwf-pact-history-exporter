@@ -99,6 +99,22 @@ Copy the DLL to:
 <GameDir>/BepInEx/plugins/LwfPactHistoryExporter/
 ```
 
+## Thunderstore package build
+
+Build a local Thunderstore upload ZIP with:
+
+```powershell
+.\scripts\New-ThunderstorePackage.ps1
+```
+
+The script rebuilds the Release DLL, checks that the plugin and manifest versions match, then creates:
+
+```text
+dist/LwfPactHistoryExporter-<version>.zip
+```
+
+The ZIP root contains `manifest.json`, the end-user `README.md`, `icon.png`, and `CHANGELOG.md`. Its `LwfPactHistoryExporter/` folder contains only the DLL, so Thunderstore Mod Manager installs it as `BepInEx/plugins/LwfPactHistoryExporter/LwfPactHistoryExporter.dll`.
+
 ## Development test export
 
 With at least one pact-history entry available, set `TestPanelCount` to a positive number in the `[Debug]` section of the BepInEx configuration file, then press the configured `ExportShortcut` (default: `F8`) in-game. The exporter repeats the current snapshots up to that number and writes files whose names include `_Test_`. It does not alter saves or pact history.
