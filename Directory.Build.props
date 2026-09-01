@@ -1,6 +1,7 @@
 <Project>
   <!--
-    Machine-specific GameDir is imported from Directory.Build.user.props.
+    Machine-specific GameDir and optional BepInExCoreDir are imported from
+    Directory.Build.user.props.
     Do not commit that file.
   -->
   <Import Project="Directory.Build.user.props" Condition="Exists('Directory.Build.user.props')" />
@@ -8,7 +9,7 @@
   <PropertyGroup>
     <GameDataDir>$([System.IO.Directory]::GetDirectories($(GameDir), '*_Data'))</GameDataDir>
     <GameManagedDir>$(GameDataDir)/Managed</GameManagedDir>
-    <BepInExCoreDir>$(GameDir)/BepInEx/core</BepInExCoreDir>
+    <BepInExCoreDir Condition="'$(BepInExCoreDir)' == ''">$(GameDir)/BepInEx/core</BepInExCoreDir>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
 </Project>

@@ -2,5 +2,7 @@
   <PropertyGroup>
     <!-- Folder containing LazyWitchsFactory.exe -->
     <GameDir>D:\Games\SteamLibrary\steamapps\common\Lazy Witch's Factory</GameDir>
+    <!-- Optional: a separate, version-pinned BepInEx 5 core folder for development builds. -->
+    <!-- <BepInExCoreDir>D:\MOD-Development\bepinex-5.4.2305\core</BepInExCoreDir> -->
   </PropertyGroup>
 </Project>

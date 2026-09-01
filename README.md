@@ -78,6 +78,10 @@ Copy-Item .\Directory.Build.user.props.example .\Directory.Build.user.props
 ```
 
 Edit `GameDir` in `Directory.Build.user.props` so it points to the directory containing `LazyWitchsFactory.exe`.
+For stable development builds, optionally set `BepInExCoreDir` to a separate,
+version-pinned BepInEx 5 `core` folder. Keep this development-only reference
+outside the repository; do not use a live Mod Manager profile or include these
+DLLs in a release package.
 
 `Directory.Build.user.props` is ignored by Git. Do not commit local paths, game assemblies, BepInEx binaries, decompiled game sources, logs, saves, or generated PNG files.
 
